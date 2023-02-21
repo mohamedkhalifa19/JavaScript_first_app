@@ -38,7 +38,7 @@ form{
     border: 1px solid rgb(41, 41, 31);
 }
 .row{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .row label{
 display: block;
@@ -50,7 +50,7 @@ font-size: 1em;
 font-weight: 500;
 }
 button{
-    width: 200px;
+    width: 150px;
     border: none;
     border: 1px solid black;
     padding: 15px;
@@ -128,8 +128,17 @@ td:nth-of-type(4){
     }
     form button{
         font-size:0.8em ;
+        position: absolute;
+        bottom: 29%;
+        left: 15%;
     }
     button i{
         font-size: 0.9em;
+    }
+    h1{
+        font-size: 1.5em;
+        text-align: left;
+        font-weight: bold;
+        color: #2c2a2a;
     }
 }
