@@ -1,7 +1,9 @@
 let table = document.querySelector('#table');
 let tr = document.createElement('tr');
 let td = document.createElement('td');
+const message =document.querySelector('#message');
   document.getElementById('addBook').onclick= function(){
+    message.innerText = "";
     let name= document.getElementById('name').value;
     let title= document.getElementById('title').value;
     let number= document.getElementById('number').value;
@@ -17,10 +19,16 @@ let template = `
 <td>${status}</td>
 </tr>
 `;
-if(name!=""&&title!="" && number!="")
-table.innerHTML+=template;
+if(name!=""&&title!="" && number!=""){
+  table.innerHTML+=template;
+  message.innerText = "Book is added";
+  message.style.color ="green";
+}
+
 }
 
 function del(e){
   e.parentNode.parentNode.remove();
+  message.innerText = "Book is deleted";
+  message.style.color ="red";
 }
